@@ -1,26 +1,26 @@
-const http = require('http')
-const fetch = require('node-fetch');
-
-const port = 4000
-
+import http from "http"
+import fetch from 'node-fetch'
+import mongoose from 'mongoose'
 
 
+const port = 3000
 
-let url = "https://www.reddit.com/r/popular.json";
 
-let settings = { method: "Get" };
 
-fetch(url, settings)
-    .then(res => res.json())
-    .then((json) => {
-        // do something with JSON
-    });
+const response = await fetch('https://s3.amazonaws.com/open-to-cors/assignment.json');
+const data = await response.json();
+
+
+
+console.log(JSON.stringify(data,null,2));
+
 
 
 const server = http.createServer(function(req, res){
-    res.write('hello world')
+    res.write(JSON.stringify(data,null,2));
     res.end()
 }
+
 )
 server.listen(port, function(error){
     if(error)

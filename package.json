@@ -1,6 +1,7 @@
 {
   "name": "smartserv-task-1",
   "version": "1.0.0",
+  "type": "module",
   "description": "smartserv code assignment task 1 fetch and display JSON file ( title & descending order popularirty)",
   "main": "index.js",
   "scripts": {
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/TwiggiestOak18/SmartServ_Task1#readme",
   "dependencies": {
+    "mongoose": "^6.1.9",
     "node-fetch": "^3.2.0"
   }
 }

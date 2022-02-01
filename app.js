@@ -1,6 +1,5 @@
 import http from "http"
 import fetch from 'node-fetch'
-import mongoose from 'mongoose'
 
 
 const port = 3000

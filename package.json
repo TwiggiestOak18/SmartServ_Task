@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/TwiggiestOak18/SmartServ_Task1#readme",
   "dependencies": {
+    "express": "^4.17.2",
     "mongoose": "^6.1.9",
     "node-fetch": "^3.2.0"
   }
